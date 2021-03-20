@@ -1,0 +1,28 @@
+// colors
+$white-color: #fff;
+$grey-color: #e5e5e5;
+$purple-color: #462781;
+// font
+$font-stack: 'Source Sans Pro', sans-serif;
+$font-size-xsmall: 14px;
+$font-size-small: 18px;
+$font-size-reg: 24px;
+$font-size-large: 44px;
+// Border
+$border-purple: solid 1px #462781;
+
+@mixin flex-ct {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin flex-sp-bt {
+	@include flex-ct;
+	justify-content: space-between;
+}
+
+@mixin flex-sp-ar {
+	@include flex-ct;
+	justify-content: space-around;
+}

@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #fafafa;
+}
+
+section {
+  width: 375px;
+  height: 667px;
+  position: relative;
+  box-shadow: 0px 0px 1px 1px #e5e5e5;
+}
+
+header {
+  z-index: -1;
+}
+
+header a {
+  text-decoration: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+header a div.btn-back {
+  cursor: pointer;
+  width: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+header a div.btn-back span {
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+}
+
+main {
+  height: 450px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 40px 40px 0 0;
+  padding: 20px 25px 0;
+  color: #462781;
+}
+
+main .head .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+main .head h1.name {
+  font-size: 44px;
+  font-weight: 900;
+}
+
+main .head button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline-width: 0;
+}
+
+main div.btn-follow {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+main div.btn-follow p {
+  color: #462781;
+  font-weight: 900;
+  padding-left: 5px;
+  font-size: 14px;
+}
+
+main .subhead ul {
+  margin: 20px 0;
+  padding: 6px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  height: 62px;
+  border-top: solid 1px #462781;
+  border-bottom: solid 1px #462781;
+}
+
+main .subhead ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .subhead ul li p.head {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 0.9;
+}
+
+main .subhead ul li p {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+main h2 {
+  font-size: 14px;
+  font-weight: 900;
+  padding-left: 5px;
+}
+
+main ul.services li {
+  list-style-type: none;
+  font-size: 25px;
+  border-bottom: solid 1px #462781;
+  padding: 0 5px;
+}
+
+main ul.services li:first-of-type {
+  padding-top: 9px;
+}
+
+main ul.services li a {
+  font-weight: 300;
+  padding: 20px 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+main ul.services li a:active {
+  color: #462781;
+}
