@@ -7,10 +7,12 @@ $font-stack: 'Source Sans Pro', sans-serif;
 $font-size-xsmall: 14px;
 $font-size-small: 18px;
 $font-size-reg: 24px;
+$font-size-reg1: 24px;
 $font-size-large: 44px;
 // Border
 $border-purple: solid 1px #462781;
 
+// Flex
 @mixin flex-ct {
 	display: flex;
 	align-items: center;
@@ -25,4 +27,14 @@ $border-purple: solid 1px #462781;
 @mixin flex-sp-ar {
 	@include flex-ct;
 	justify-content: space-around;
+}
+
+// Fix font
+@mixin font-reg {
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+}
+@mixin font-black {
+	font-weight: 900;
+	-webkit-font-smoothing: antialiased;
 }

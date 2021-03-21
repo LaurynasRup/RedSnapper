@@ -22,20 +22,21 @@ section {
 }
 
 header {
-	a {
-		text-decoration: none;
+	img {
+		width: 100%;
+	}
+	a.btn-back {
 		position: absolute;
 		top: 15px;
 		left: 15px;
-		div.btn-back {
-			cursor: pointer;
-			width: 63px;
-			@include flex-sp-bt;
-			span {
-				font-size: $font-size-small;
-				font-weight: 300;
-				color: $white-color;
-			}
+		@include flex-ct;
+		color: $white-color;
+		font-size: $font-size-small;
+		@include font-reg;
+		text-decoration: none;
+
+		img {
+			padding-right: 10px;
 		}
 	}
 	z-index: -1;
@@ -57,7 +58,7 @@ main {
 		}
 		h1.name {
 			font-size: $font-size-large;
-			font-weight: 900;
+			@include font-black;
 		}
 		button {
 			cursor: pointer;
@@ -70,9 +71,9 @@ main {
 		cursor: pointer;
 		display: flex;
 		align-items: center;
-		p {
+		span {
 			color: $purple-color;
-			font-weight: 900;
+			@include font-black;
 			padding-left: 5px;
 			font-size: $font-size-xsmall;
 		}
@@ -84,7 +85,7 @@ main {
 			padding: 6px 0;
 			width: 100%;
 			@include flex-sp-ar;
-			height: 62px;
+			height: 60px;
 			border-top: $border-purple;
 			border-bottom: $border-purple;
 
@@ -95,12 +96,12 @@ main {
 				align-items: center;
 				p.head {
 					font-size: $font-size-reg;
-					font-weight: 900;
 					line-height: 0.9;
+					@include font-black;
 				}
 				p {
-					font-size: 14px;
-					font-weight: 900;
+					font-size: $font-size-xsmall;
+					@include font-black;
 				}
 			}
 		}
@@ -108,24 +109,22 @@ main {
 
 	h2 {
 		font-size: $font-size-xsmall;
-		font-weight: 900;
+		@include font-black;
 		padding-left: 5px;
 	}
 
-	ul.services {
+	ul.categories {
+		margin-top: 9px;
 		li {
 			list-style-type: none;
-			font-size: 25px;
+			font-size: $font-size-reg1;
 			border-bottom: $border-purple;
 			padding: 0 5px;
-			&:first-of-type {
-				padding-top: 9px;
-			}
 			a {
-				font-weight: 300;
-				padding: 20px 0;
-				text-decoration: none;
 				@include flex-sp-bt;
+				@include font-reg;
+				padding: 21px 0;
+				text-decoration: none;
 				&:active {
 					color: $purple-color;
 				}

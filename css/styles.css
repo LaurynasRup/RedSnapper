@@ -25,26 +25,26 @@ header {
   z-index: -1;
 }
 
-header a {
-  text-decoration: none;
+header img {
+  width: 100%;
+}
+
+header a.btn-back {
   position: absolute;
   top: 15px;
   left: 15px;
-}
-
-header a div.btn-back {
-  cursor: pointer;
-  width: 63px;
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-content: space-between;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
 }
 
-header a div.btn-back span {
-  font-size: 18px;
-  font-weight: 300;
-  color: #fff;
+header a.btn-back img {
+  padding-right: 10px;
 }
 
 main {
@@ -69,6 +69,7 @@ main .head .top {
 main .head h1.name {
   font-size: 44px;
   font-weight: 900;
+  -webkit-font-smoothing: antialiased;
 }
 
 main .head button {
@@ -84,9 +85,10 @@ main div.btn-follow {
   align-items: center;
 }
 
-main div.btn-follow p {
+main div.btn-follow span {
   color: #462781;
   font-weight: 900;
+  -webkit-font-smoothing: antialiased;
   padding-left: 5px;
   font-size: 14px;
 }
@@ -99,7 +101,7 @@ main .subhead ul {
   align-items: center;
   justify-content: center;
   justify-content: space-around;
-  height: 62px;
+  height: 60px;
   border-top: solid 1px #462781;
   border-bottom: solid 1px #462781;
 }
@@ -113,42 +115,46 @@ main .subhead ul li {
 
 main .subhead ul li p.head {
   font-size: 24px;
-  font-weight: 900;
   line-height: 0.9;
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
 }
 
 main .subhead ul li p {
   font-size: 14px;
   font-weight: 900;
+  -webkit-font-smoothing: antialiased;
 }
 
 main h2 {
   font-size: 14px;
   font-weight: 900;
+  -webkit-font-smoothing: antialiased;
   padding-left: 5px;
 }
 
-main ul.services li {
+main ul.categories {
+  margin-top: 9px;
+}
+
+main ul.categories li {
   list-style-type: none;
-  font-size: 25px;
+  font-size: 24px;
   border-bottom: solid 1px #462781;
   padding: 0 5px;
 }
 
-main ul.services li:first-of-type {
-  padding-top: 9px;
-}
-
-main ul.services li a {
-  font-weight: 300;
-  padding: 20px 0;
-  text-decoration: none;
+main ul.categories li a {
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  padding: 21px 0;
+  text-decoration: none;
 }
 
-main ul.services li a:active {
+main ul.categories li a:active {
   color: #462781;
 }
